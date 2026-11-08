@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA | Style, Beauty & Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>VELORA</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="clothes.html">Clothes</a>
+            <a href="gadgets.html">Gadgets</a>
+            <a href="cosmetics.html">Cosmetics</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="register.html">Register</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Discover your Style</h2>
+            <p>Fashion, beauty, and technology — all in one place.</p>
+            <a href="#categories" class="shop-btn">Shop Now</a>
+        </section>
+
+        <section class="categories" id="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/clothes.jpg" alt="Clothes Collection">
+                    <h3>Clothes</h3>
+                    <a href="clothes.html">Explore Clothes</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/gadgets.jpg" alt="Gadgets Collection">
+                    <h3>Gadgets</h3>
+                    <a href="gadgets.html">Explore Gadgets</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/cosmetics.jpg" alt="Cosmetics Collection">
+                    <h3>Cosmetics</h3>
+                    <a href="cosmetics.html">Explore Cosmetics</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Products</h2>
+            
+            <div class="filter-controls" style="margin-bottom: 30px; text-align: center;">
+                <input type="text" id="searchInput" placeholder="Search all products..." class="form-control" style="max-width: 300px; margin: 0 auto 15px auto;">
+                <div>
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="clothes">Clothes</button>
+                    <button class="filter-btn" data-category="gadgets">Gadgets</button>
+                    <button class="filter-btn" data-category="cosmetics">Cosmetics</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                
+                <div class="product-card" data-name="Classic Jacket" data-category="clothes">
+                    <img src="images/product1.jpg" alt="Classic Jacket" class="lightbox-img" loading="lazy">
+                    <h3>Classic Jacket</h3>
+                    <p>$79.99</p>
+                    <a href="clothes.html">View Product</a>
+                </div>
+                <div class="product-card" data-name="Wireless Headphones" data-category="gadgets">
+                    <img src="images/product2.jpg" alt="Wireless Headphones" class="lightbox-img" loading="lazy">
+                    <h3>Wireless Headphones</h3>
+                    <p>$129.99</p>
+                    <a href="gadgets.html">View Product</a>
+                </div>
+                <div class="product-card" data-name="Luxury Perfume" data-category="cosmetics">
+                    <img src="images/product3.jpg" alt="Luxury Perfume" class="lightbox-img" loading="lazy">
+                    <h3>Luxury Perfume</h3>
+                    <p>$89.99</p>
+                    <a href="cosmetics.html">View Product</a>
+                </div>
+
+                <div class="product-card" data-name="Elegant Dress" data-category="clothes">
+                    <img src="images/dress.jpg" alt="Elegant Dress" class="lightbox-img" loading="lazy">
+                    <h3>Elegant Dress</h3>
+                    <p>$69.99</p>
+                    <a href="clothes.html">View Product</a>
+                </div>
+                <div class="product-card" data-name="Casual Hoodie" data-category="clothes">
+                    <img src="images/hoodie.jpg" alt="Casual Hoodie" class="lightbox-img" loading="lazy">
+                    <h3>Casual Hoodie</h3>
+                    <p>$49.99</p>
+                    <a href="clothes.html">View Product</a>
+                </div>
+
+                <div class="product-card" data-name="Smart Watch" data-category="gadgets">
+                    <img src="images/smartwatch.jpg" alt="Smart Watch" class="lightbox-img" loading="lazy">
+                    <h3>Smart Watch</h3>
+                    <p>$199.99</p>
+                    <a href="gadgets.html">View Product</a>
+                </div>
+                <div class="product-card" data-name="Portable Speaker" data-category="gadgets">
+                    <img src="images/speaker.jpg" alt="Portable Speaker" class="lightbox-img" loading="lazy">
+                    <h3>Portable Speaker</h3>
+                    <p>$89.99</p>
+                    <a href="gadgets.html">View Product</a>
+                </div>
+
+                <div class="product-card" data-name="Velvet Lipstick" data-category="cosmetics">
+                    <img src="images/lipstick.jpg" alt="Velvet Lipstick" class="lightbox-img" loading="lazy">
+                    <h3>Velvet Lipstick</h3>
+                    <p>$24.99</p>
+                    <a href="cosmetics.html">View Product</a>
+                </div>
+                <div class="product-card" data-name="Skin Care Set" data-category="cosmetics">
+                    <img src="images/skincare.jpg" alt="Skin Care Set" class="lightbox-img" loading="lazy">
+                    <h3>Skin Care Set</h3>
+                    <p>$59.99</p>
+                    <a href="cosmetics.html">View Product</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox">
+        <span id="closeLightbox">&times;</span>
+        <span id="prevArrow">&#10094;</span>
+        <img id="lightboxImg" src="" alt="Enlarged Image">
+        <span id="nextArrow">&#10095;</span>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 VELORA. All rights reserved.</p>
+        <p>Email: info@velora.com</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
